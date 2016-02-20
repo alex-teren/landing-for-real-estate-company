@@ -23,3 +23,8 @@ body input:required:valid,
 body textarea:required:valid {
 	
 }
+
+
+body {
+	font-family: "OpenSansRegular", sens-serif;
+}

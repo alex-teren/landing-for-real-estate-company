@@ -5,6 +5,8 @@
 	.phone_top {
 		position: absolute; 
 		right: 0; 
+		top: -20px;
+    min-width: 170px;
 	}
 
 	
@@ -61,10 +63,23 @@
 	.phone_top {
 		position: relative;
 	}
+
+
+	.carousel .item {
+		min-height: 550px;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.carousel-inner .h1 {
+		font-size: 1.7em;
+		line-height: 1.2;
+	}
+	.carousel-inner small {
+		font-size: .8em;
+		margin-top: 10px;
+	}
 
 }
 

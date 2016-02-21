@@ -21,10 +21,13 @@ body textarea:focus:required:invalid {
 }
 body input:required:valid,
 body textarea:required:valid {
-	
 }
 
-
-body {
-	font-family: "OpenSansRegular", sens-serif;
+.s_main {
+	margin-top: 20px;
 }
+
+.main_side .box {
+	margin-bottom: 20px;
+}
+

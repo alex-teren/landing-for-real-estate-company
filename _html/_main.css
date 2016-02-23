@@ -141,11 +141,14 @@ h1.lead, h2.lead, h3.lead, h4.lead, h5.lead, h6.lead, .h1.lead, .h2.lead, .h3.le
 	text-transform: none;
 }
 
-.h1, h1 {
+.content .h1, .content h1 {
 	font-family: "OpenSansRegular", sans-serif;
+	border-bottom: #EFEFEF 1px solid;
+	padding-bottom: 16px;
+	margin-top: 15px;
 }
 
-.carousel-inner {
+.aside_carousel .carousel-inner {
 	margin: 20px 0;
 }
 
@@ -202,4 +205,72 @@ h1.lead, h2.lead, h3.lead, h4.lead, h5.lead, h6.lead, .h1.lead, .h2.lead, .h3.le
 
 .box .well p:last-child {
 	margin-bottom: 0px;
+}
+
+.tt {
+	display: table;
+}
+
+.tr {
+	display: table-row;
+}
+
+.tc {
+	display: table-cell;
+}
+
+/*.till_item a {	
+	position: relative;
+}
+
+.till_content {
+	background-color: rgba(244, 134, 58, 0.75);
+	-webkit-transition: all .5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all .5s ease;
+}
+
+.till_item .tr .till_txt{
+
+}*/
+
+.till_item {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.till_item img {
+	width: 100%;
+}
+.till_content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: rgba(244, 134, 58, 0.75);
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+.till_item .tc .till_txt {
+	text-align: center;
+	vertical-align: middle;
+}
+.till_item .tc {
+	vertical-align: middle;
+}
+.till_txt {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: "OpenSansBold", sans-serif;
+	margin: 0 50px;
+	color: #fff;
+	text-shadow: 0 1px 5px rgba(0, 0, 0, 0.75);
+	display: inline-block;
+}
+.till_item a:hover .till_content {
+	background-color: rgba(255, 194, 20, 0.55);
 }

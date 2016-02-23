@@ -61,6 +61,9 @@ body {
 	background-size: cover;
 }
 
+
+
+
 .carousel-control {
 	z-index: 10;
 }
@@ -70,3 +73,4 @@ body {
 	line-height: 1.5;
 	margin-top: 0; 
 }
+

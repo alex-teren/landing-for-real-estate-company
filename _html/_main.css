@@ -141,6 +141,10 @@ h1.lead, h2.lead, h3.lead, h4.lead, h5.lead, h6.lead, .h1.lead, .h2.lead, .h3.le
 	text-transform: none;
 }
 
+.h1, h1 {
+	font-family: "OpenSansRegular", sans-serif;
+}
+
 .carousel-inner {
 	margin: 20px 0;
 }
@@ -185,4 +189,17 @@ h1.lead, h2.lead, h3.lead, h4.lead, h5.lead, h6.lead, .h1.lead, .h2.lead, .h3.le
 
 .carousel-fade .carousel-inner .active {
 	opacity: 1;
+}
+
+.box .well h4 {
+	margin-top: 0;
+}
+
+.box .well p {
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+.box .well p:last-child {
+	margin-bottom: 0px;
 }

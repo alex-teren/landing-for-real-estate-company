@@ -36,7 +36,7 @@ body textarea:required:valid {
 }
 
 .box_back .panel-heading {
-	padding: 5px;
+	padding: 6px;
 }
 
 .box_search .panel-default {
@@ -53,7 +53,7 @@ body textarea:required:valid {
 
 
 .box_back h4 {
-	display: inline;
+	display: inline-block;
 	font-size: 14px;
 	font-family: "OpenSansBold", sans-serif;
 
@@ -65,15 +65,22 @@ body textarea:required:valid {
 	text-transform: none;
 	font-family: "OpenSansBold", sans-serif;
 	padding: 6px 4px;
-	margin-left: 5px;
+	float: right;
 }
 
 .box_back .input-group {
 	margin-bottom: 10px;
 }
 
-.box_back.input-group:last-child {
+.box_back .input-group:last-child {
 	margin-bottom: 0px;
+}
+
+.panel {
+	margin-bottom: 15px;
+}
+.panel-body {
+	padding: 12px;
 }
 
 .panel-title > a, .panel-title > small, .panel-title > .small, .panel-title > small > a, .panel-title > .small > a {
@@ -184,6 +191,10 @@ h1.lead, h2.lead, h3.lead, h4.lead, h5.lead, h6.lead, .h1.lead, .h2.lead, .h3.le
 	bottom: 2px;
 }
 
+.aside_carousel .carousel .item {
+	min-height: 100px;
+}
+
 .carousel-fade .carousel-inner .item {
 	opacity: 0;
 	-webkit-transition-property: opacity;  
@@ -220,6 +231,7 @@ h1.lead, h2.lead, h3.lead, h4.lead, h5.lead, h6.lead, .h1.lead, .h2.lead, .h3.le
 .tc {
 	display: table-cell;
 }
+
 
 .till_item {
 	margin-top: 10px;
@@ -260,4 +272,198 @@ h1.lead, h2.lead, h3.lead, h4.lead, h5.lead, h6.lead, .h1.lead, .h2.lead, .h3.le
 }
 .till_item a:hover .till_content {
 	background-color: rgba(255, 194, 20, 0.55);
+}
+
+.bens {
+	margin-top: 20px;
+	position: relative;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+
+.ben-item {
+	background-image: -webkit-linear-gradient(#fff, #F6F6F6);
+	background-image: -o-linear-gradient(#fff, #F6F6F6);
+	background-image: linear-gradient(#fff, #F6F6F6);
+	padding: 30px 0;
+	font-family: "OpenSansBold", sans-serif;
+}
+
+.ben-item:nth-child(3) {
+	padding: 32px 0;
+}
+
+.ben-item:last-child {
+	padding: 32px 0;
+}
+
+.ben-item h4 {
+	font-size: 26px;
+	text-transform: none;
+	color: #787878;
+	margin-bottom: 0;
+	line-height: 18px;
+}
+
+.ben-item h4 span {
+	color: #242424;
+}
+
+.ben-item h4 sup {
+	font-size: 16px;
+}
+
+.ben-item small {
+	font-size: 12px;
+}
+
+.ben-item::before {
+	content: "";
+	width: 1px;
+	position: absolute;
+	height: 100%;
+	right: 0;
+	top: 0;
+	background-image: -webkit-linear-gradient(#F3F3F3, #DEDEDE);
+	background-image: -o-linear-gradient(#F3F3F3, #DEDEDE);
+	background-image: linear-gradient(#F3F3F3, #DEDEDE);
+}
+
+.ben-item:last-child::before {
+	display: none;
+}
+
+article {
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+article a {
+	text-decoration: underline;
+}
+
+article a:hover {
+	text-decoration: none;
+}
+
+article ul {
+	list-style-type: circle;
+}
+
+article img {
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+.widget_news {
+	margin-bottom: 15px;
+}
+.widget_news ul {
+	margin: 0;
+	padding: 0;
+}
+.widget_news li {
+	list-style-type: none;
+}
+.widget_news h4 {
+	margin-bottom: 15px;
+}
+.widget_news .more {
+	margin-bottom: 5px;
+	display: inline-block;
+	text-decoration: underline;
+}
+.widget_news .more:hover {
+	text-decoration: none;
+}
+.wn_item .panel {
+	max-width: 240px;
+}
+.wn_item:nth-child(2) .panel {
+	margin-left: auto;
+	margin-right: auto;
+}
+.mapcontainer {
+	text-align: center;
+}
+.wn_item:last-child .panel {
+	float: right;
+}
+
+.main_footer {
+	background-color: #242424;
+	padding: 30px 0 10px;
+	color: #fff;
+	font-size: 16px;
+	font-family: "RobotoRegular", sans-serif;
+	margin-top: 20px;
+}
+.logo_wrap {
+	height: 65px;
+	overflow: hidden;
+	margin-top: -15px;
+}
+.main_footer strong {
+	display: block;
+	position: relative;
+	line-height: 1.3;
+}
+.main_footer strong::before {
+	width: 2px;
+	content: "";
+	position: absolute;
+	height: 80%;
+	top: 6px;
+	left: -15px;
+	background-color: #fff;
+}
+.footer_phone {
+	font-size: 24px;
+	font-family: "RobotoBold", sans-serif;
+	font-weight: bold;
+	line-height: .8;
+	margin-top: 2px;
+}
+.callback {
+	font-size: 12px;
+	font-weight: normal;
+	border-bottom: #fff 1px dotted;
+	color: #fff;
+}
+.callback:hover {
+	border-bottom: #f27937 1px dotted;
+	text-decoration: none;
+}
+.devel {
+	color: #4e4e4e;
+	font-size: 15px;
+	font-family: "RobotoBold", sans-serif;
+	margin-top: -10px;
+	display: inline-block;
+	width: 118px;
+}
+.devel small {
+	margin-bottom: 2px;
+	display: inline-block;
+}
+.devel:hover,
+.devel:focus {
+	color: #4e4e4e;
+	text-decoration: none;
+}
+.modal-dialog {
+	z-index: 10000;
+	max-width: 360px;
+}
+.modal-footer {
+	text-align: center;
+}
+.isnohome .navbar-header {
+	overflow-y: hidden;
+	padding-left: 2px;
+}
+.isnohome .navbar-brand img {
+	width: 80px;
+	margin-right: 20px;
 }
